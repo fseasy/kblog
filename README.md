@@ -1,2 +1,3 @@
-# kblog
-blog for knowledge
+# K-blog
+
+Blog for knowledge.
