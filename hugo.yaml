@@ -129,26 +129,21 @@ menus:
       pageref: /
       pre: home
       weight: 1
-    - identifier: about
-      name: 关于
-      pageref: /about.html
-      pre: user
-      weight: 2
-    - identifier: flinks
-      name: 站点示例
-      pageref: /flinks.html
-      pre: thumbs-up
-      weight: 3
     - identifier: archives
       name: 归档
       pageref: /archives
       pre: archive
-      weight: 4
-    - identifier: commonweal
-      name: 公益 404
-      url: /404.html
-      pre: heartbeat
-      weight: 5
+      weight: 2
+    - identifier: about
+      name: 关于
+      pageref: /about.html
+      pre: user
+      weight: 3
+    # - identifier: flinks
+    #   name: 站点示例
+    #   pageref: /flinks.html
+    #   pre: thumbs-up
+    #   weight: 3
 
 #-----------------------------------------
 # Hugo NexT 主题参数配置
@@ -181,17 +176,17 @@ params:
   # 站点基本信息
   # Site Information Settings
   author: fseasy
-  subtitle: 记录知识
-  description: 将有价值的内容记录整理。
+  subtitle: fish-shrimp inside
+  description: 记录整理知识
   keywords: 知识,fseasy
 
   # 不同尺寸站点图标
   # Different size of favicon
   favicon:
     icon: /imgs/icons/favicon.ico
-    small: /imgs/icons/favicon_16x16_next.png
-    medium: /imgs/icons/favicon_32_32_next.png
-    appleTouchIcon: /imgs/icons/apple_touch_icon_next.png
+    small: /imgs/icons/favicon.ico
+    medium: /imgs/icons/favicon.ico
+    appleTouchIcon: /imgs/icons/favicon.ico
 
   # 自定义 Logo （目前只支持 Mist 页面模式）
   # Custom Logo (Warning: Only support scheme Mist)
@@ -214,13 +209,13 @@ params:
     license: by-nc-sa
     # 可选配置： big | small
     # Available values: big | small
-    size: big
+    size: small
     # 侧边栏显示
     # Show in sidebar
     sidebar: true
     # 文章底部显示
     # Show in post footer
-    post: true
+    post: false
 
   # OG SEO 配置
   # Open graph settings
@@ -250,7 +245,7 @@ params:
   sidebar:
     # 侧边栏位置，可选： left | right
     # Sidebar Position: left | right
-    position: left
+    position: right
 
     # 自定义侧边栏的宽度，默认配置如下
     # Muse | Mist: 320
@@ -286,13 +281,13 @@ params:
   avatar:
     # 设置显示头像的相对路径
     # Replace the default image and set the url here.
-    url: /imgs/hugo_next_avatar.png
+    url: /imgs/icons/fslogo.webp
     # 开启头像的圆形显示效果
     # If true, the avatar will be displayed in circle.
     rounded: true
     # 开启头像随鼠标转动动画
     # If true, the avatar will be rotated with the cursor.
-    rotated: true
+    rotated: false
   siteState: 
     # 是否在侧边栏显示文章、分类、标签信息
     # Posts / Categories / Tags in sidebar.
@@ -300,7 +295,7 @@ params:
     # 站点访问信息
     # Site's view information
     views:  
-      enable: true
+      enable: false
       # 组件类型，可选值为： 51la, busuanzi
       # 使用51la时需要注册账号：https://invite.51.la/
       # Plguin value is: 51la, busuanzi
@@ -315,7 +310,7 @@ params:
   # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
   socials: 
     social0: Github || https://github.com/fseasy || fab fa-github
-    #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
+    social1: E-Mail || mailto:xuwei@fseasy.top || fa fa-envelope
     # social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
     #Google: https://plus.google.com/yourname || fab fa-google
     #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -358,7 +353,6 @@ params:
   # Usage: `Key: name || permalink`
   links: 
     link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-    link1: 凡梦星尘空间站 || https://lisenhui.cn
 
   # 文章目录显示
   # Table of Contents in the Sidebar
@@ -388,11 +382,11 @@ params:
   footer:
     # 启动谷歌翻译功能
     # Enable google translate in footer
-    translate: true
+    translate: false
     # 站点开始年份，默认为当下时间的年份
     # Specify the year when the site was setup. 
     # If not defined, current year will be used.
-    since: 2010
+    since: 2023
 
     # 年份和版权信息之间的图标
     # Icon between year and copyright info.
@@ -402,7 +396,7 @@ params:
       name: fa fa-heart
       # 开启图标动画效果
       # If you want to animate the icon, set it to true.
-      animated: true
+      animated: false
       # 使用16进制设置图标的颜色
       # Change the color of icon, using Hex Code.
       color: "#ff0000"
@@ -419,7 +413,7 @@ params:
     # Beian ICP and gongan information for Chinese users. 
     # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
     beian:
-      enable: true
+      enable: false
       # ICP 备案的具体信息
       icp: 粤ICP备 18047355-1 号
       # 公安网备的省份简称
@@ -430,7 +424,7 @@ params:
     # 站点支持供应商列表
     # Vendors list who support website. 
     vendors:
-      enable: true
+      enable: false
       # 支持说明
       # Some support information description.
       title: 提供CDN/云资源支持
@@ -498,7 +492,7 @@ params:
     # 通过线条将文章和捐赠等信息隔开，并在线条上添加提示信息
     # Use line to separate post and reward etc other information
     # and add tip title on line.
-    endLineTip: "~ 我可是有底线的哟 ~"
+    endLineTip: "document end"
     # 是否使用小图标，默认使用 # 符号表示标签
     # Use icon instead of the symbol # to indicate the tag
     tagIcon: true
@@ -509,7 +503,7 @@ params:
     # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
     # If true, a donate button will be displayed 
     # in every article by default.
-    enable: true
+    enable: false
     # 是否开启捐赠方式的动画效果
     # If true, the donate type title will with animation.
     animation: true
@@ -531,9 +525,9 @@ params:
   # Subscribe through Telegram Channel, Twitter, etc.
   # Usage: `Key: name || permalink || icon` (Font Awesome)
   followMe:
-    #channel0: Twitter || https://twitter.com/username || fab fa-twitter
+    channel0: Twitter || https://twitter.com/fishshrimp555 || fab fa-twitter
     #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-    channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+    # channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
     channel3: RSS || /atom.xml || fa fa-rss
 
   # 文章的在线编辑
@@ -541,7 +535,7 @@ params:
   # Easily browse and edit blog source code online.
   postEdit:
     enable: true
-    url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
+    url: https://github.com/fseasy/kblog/tree/main/subdirectory-name/
 
 
   # 设置文本的对齐方式
@@ -620,7 +614,7 @@ params:
   bookmark:
     # 开启书签功能
     # If true, will display bookmark in all page.
-    enable: true
+    enable: false
     # 自定义书签显示颜色
     # Customize the color of the bookmark.
     color: "#222"
@@ -636,10 +630,10 @@ params:
   githubBanner:
     # 是否开启显示
     # If true, will display banner.
-    enable: true
+    enable: false
     # 你的 Github 仓库地址
     # Your repository url on Github.
-    permalink: https://github.com/hugo-next
+    permalink: https://github.com/fseasy
     # 关注说明
     # Show this title when cursor move on.
     title: Follow me on GitHub
@@ -742,7 +736,7 @@ params:
   # 注意这里全局配置，意味着所有页面都会加载数学公式脚本
   # Math Formulas Render Support, options: mathjax, katex
   # Warning: It's global settings then will load scripts in every page.
-  #math: mathjax
+  # math: mathjax
 
   # TODO
   # FancyBox is a tool that offers a nice and elegant way 
