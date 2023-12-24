@@ -54,12 +54,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Scp result
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          source: ./public
-          target: /root/deploy/kblog
+      # RSYNC. 
+      - name: 🚀 Upload by RSync
+        run: |
+          sudo apt install rsync sshpass
+          sshpass -p ${{ secrets.KEY }} \
+            rsync --archive --stats \
+            -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.PORT }}" \
+            public/* \
+            ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/root/deploy/kblog
