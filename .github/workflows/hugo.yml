@@ -27,22 +27,33 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.121.1
+
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo --minify 
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.121.1'
+          extended: true
+
+      - uses: actions/cache@v3
+        with:
+          path: /home/runner/.cache/hugo_cache    # <-- with hugo version v0.116.0 and above
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      - name: Build
+        run: hugo --minify
+
       - name: Scp result
         uses: appleboy/scp-action@v0.1.4
         with:
