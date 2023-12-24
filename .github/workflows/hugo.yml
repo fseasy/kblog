@@ -56,10 +56,10 @@ jobs:
 
       - name: Scp result
         uses: appleboy/scp-action@v0.1.4
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.KEY }}
-            port: ${{ secrets.PORT }}
-            source: ./public
-            target: /root/deploy/kblog
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          source: ./public
+          target: /root/deploy/kblog
