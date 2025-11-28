@@ -2,7 +2,8 @@ theme: 'stack'
 
 baseurl: https://k.fseasy.blog
 languageCode: zh-cn
-paginate: 5
+pagination:
+  pagerSize: 10
 title: 知
 copyright: fseasy
 
@@ -38,11 +39,13 @@ hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
+    posts: /p/:slug/
     page: /:slug/
 
 params:
     mainSections:
         - post
+        - posts
     featuredImageField: image
     rssFullContent: true
     favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
