@@ -2,7 +2,7 @@
 title: "Dart 碎片记录"
 date: 2025-11-28T23:08:21+08:00
 slug: ""
-draft: true
+draft: false
 image: 
 math: false
 license: CC BY-SA 4.0
@@ -15,7 +15,7 @@ categories:
   - 
 ---
 
-## Basic
+## Basic 1
 
 ```Dart
 import 'dart:math' show Random;
@@ -86,3 +86,56 @@ class Point {
 - 方法：特殊的 get 方法，使用箭头函数直接返回，有 `get` 关键字
 - 单继承，使用 extends 关键字；
 - mixin 混入，类似 interface，可以实现多继承
+
+## Basic 2
+
+```dart
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+class Package {
+  final String name;
+  final String latestVersion;
+  final String? description;
+
+  Package(this.name, this.latestVersion, {this.description});
+
+  @override
+  String toString() {
+    return 'Package{name: $name, latestVersion: $latestVersion, description: $description}';
+  }
+}
+
+void main() async {
+  final httpPackageUrl = Uri.https('dart.dev', '/f/packages/http.json');
+  final httpPackageResponse = await http.get(httpPackageUrl);
+  if (httpPackageResponse.statusCode != 200) {
+    print('Failed to retrieve the http package!');
+    return;
+  }
+  final json = jsonDecode(httpPackageResponse.body);
+  final package = Package(
+    json['name'],
+    json['latestVersion'],
+    description: json['description'],
+  );
+  print(package);
+}
+```
+
+1. final 关键字：表示第一次赋值后不能再更改；无需要求静态赋值（可以运行时才知道值）；const 则表示值需要在编译时就是定值。
+   与 final 对应的是 `var`，默认就是 var, 所以一般不写。
+2. toString 是从顶层 object 隐式继承的函数
+3. `String?` 里的 ? 表示可空 (null) 类型.
+   `!` 非空断言;
+   `??` 空合并操作符： `final b = a ?? "null-default"`
+   `??=` 空合并赋值： `b ??= "null-default"`: 只有 b 是 null 时才执行这个赋值。
+4. Dart 的核心内建类型可以分成 7 类：
+   - 基本值类型：int, double, num, bool, String, Null
+   - 对象体系：Object, Object?, dynamic
+   - 集合：List, Set, Map, Iterable
+   - 异步：Future, Stream, FutureOr
+   - 运行时：Type, Function, Never
+   - 时间：DateTime, Duration
+   - 大数/实用类：BigInt, RegExp, Uri
+
