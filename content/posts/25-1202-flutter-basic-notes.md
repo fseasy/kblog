@@ -2,7 +2,7 @@
 title: "Flutter Basic Notes"
 date: 2025-12-02T17:24:41+08:00
 slug: "flutter-baisc-notes"
-draft: true
+draft: false
 image: 
 math: false
 license: CC BY-SA 4.0
