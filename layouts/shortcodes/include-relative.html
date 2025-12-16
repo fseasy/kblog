@@ -1,0 +1,6 @@
+{{- $name := .Get 0 -}}
+{{- with .Page.Resources.GetMatch $name -}}
+  {{- .Content -}}
+{{- else -}}
+  {{- errorf "找不到相对资源文件: %s (在 %s 中)" $name .Page.File -}}
+{{- end -}}
