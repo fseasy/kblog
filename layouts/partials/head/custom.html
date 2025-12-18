@@ -40,7 +40,13 @@
   background: rgba(87, 89, 89, 0.5);
 }
 
-.st {
+.callout > .hdot {
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+
+.st, 
+.callout {
   padding: 0 0 0.6em 0;
   margin: 16px 0 16px 0;
   
@@ -86,19 +92,25 @@
 }
 
 .st ol, 
-.st ul{
+.st ul,
+.callout ol,
+.callout ul {
 	margin: 0;
   padding: 0 0 0 1em;
   font-size: 14px;
 }
 
 .st ol > li, 
-.st ul > li {
+.st ul > li,
+.callout ol > li,
+.callout ul > li {
   padding: 0;
 }
 
 .st section, 
-.st section>p {
+.st section>p,
+.callout section, 
+.callout section>p {
   font-size: 14px;
 }
 
