@@ -139,3 +139,39 @@ void main() async {
    - 时间：DateTime, Duration
    - 大数/实用类：BigInt, RegExp, Uri
 
+## Basic 3
+
+```
+final container = Container(
+  // grey box
+  width: 320,
+  height: 240,
+  color: Colors.grey[300],
+  child: Center(
+    child: Transform(
+      alignment: Alignment.center,
+      transform: Matrix4.identity()..rotateZ(15 * 3.1415927 / 180),
+      child: Container(
+        // red box
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.red[400],
+        ),
+        child: Text(
+          'Lorem ipsum',
+          style: bold24Roboto,
+          textAlign: TextAlign.center,
+        ),
+      ),
+    ),
+  ),
+);
+```
+
+完成旋转操作；
+
+`Matrix4.identity()..rotateZ(15 * 3.1415927 / 180)`:
+
+1. `..` 是级联运算符：不管函数返回啥，通过这个运算符，总是返回执行操作后得原对象。
+2. 要想选择一个元素，使用这个方法！ Transform widget + Matrix.
+

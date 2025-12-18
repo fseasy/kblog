@@ -18,12 +18,30 @@
 
   border-radius: 6px;
   border: 2px solid #575959;
+}
 
-  padding:10px 14px;
+.dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-right: 4px;
+
+  border-radius: 50%;
+  background: rgba(87, 89, 89, 0.5); /* = #575959*/
+}
+
+.hdot {
+  width: 8px;
+  height: 8px;
+  
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 0 50% 50% 0;
+  background: rgba(87, 89, 89, 0.5);
 }
 
 .st {
-  padding: 1.4em 0.1em 0.6em 0.1em;
+  padding: 0 0 0.6em 0;
   margin: 16px 0 16px 0;
   
   line-height: 1.8;
@@ -53,6 +71,15 @@
   border-bottom: 2px solid #575959;
 }
 
+.src-tag {
+  font-style: italic;
+  margin-bottom: 0.6em;
+  color: #999999;
+  background: #f5f5fa;
+  padding: 0 0 0 0.1em;
+  margin-bottom: 1em;
+}
+
 .st.text-center {
   text-align: center;
   text-align-last: center;
@@ -73,6 +100,10 @@
 .st section, 
 .st section>p {
   font-size: 14px;
+}
+
+blockquote>ul {
+  padding-inline-start: 1em;
 }
 
 </style>

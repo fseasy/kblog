@@ -17,7 +17,7 @@ categories:
 
 ## Layout
 
-1. layout 是有自己和 parent 共同决定的：Constraints go down. Sizes go up. Parent sets the position.
+1. layout 是由自己和 parent 共同决定的：Constraints go down. Sizes go up. Parent sets the position.
    
    In the simplest example, the layout conversation looks like this:
 
@@ -63,3 +63,66 @@ categories:
    - Model: server 侧的数据结构；可以与 Flutter 无任何关系。
    - ViewModel: 与 Model 交互，同时暴露接口给 View. 一般继承自 ChangeNotifier, 这样 View 就可以使用它来注册监听，实时渲染改动。
    - View: Widget (这里的话，都是用 ListenableBuilder 封装，这样方便更新)。注意它只会访问 ViewModel 实例，看不见 Model 的。
+
+## User Input
+
+
+### 按钮
+
+Buttons allow a user to initiate an action in the UI by clicking or tapping. The Material library provides a variety of button types that are functionally similar, but styled differently for various use cases, including:
+
+ElevatedButton: A button with some depth. Use elevated buttons to add dimension to otherwise mostly flat layouts. 在整体偏扁平的界面中，使用带立体感（有阴影）的按钮，可以增加层次和深度感。 dimension 在这里不是数学维度，指的是：立体感，层次感，深度（depth）
+
+FilledButton: A filled button that should be used for important, final actions that complete a flow, like Save, Join now, or Confirm. 实色按钮（primary color, 很显眼）
+Tonal Button: A middle ground button between FilledButton and OutlinedButton. They're useful in contexts where a lower-priority button requires more emphasis than an outline, like Next. 色调按钮（同色系但柔和，次要引导）
+OutlinedButton: A button with text and a visible border. These buttons contain actions that are important, but aren't the primary action in an app. 描边按钮（几乎无填充，低调）
+TextButton: Clickable text, without a border. Since text buttons don't have visible borders, they must rely on their position relative to other content for context.
+IconButton: A button with an icon.
+FloatingActionButton: An icon button that hovers over content to promote a primary action.
+
+
+Rich Text: Rich Text Editor code https://github.com/flutter/samples/tree/main/simplistic_editor
+
+
+Form App demo: https://github.com/flutter/samples/tree/main/form_app/
+
+## 语法
+
+`<Calendar>{calendarView},`: 泛型字面量构造函数； = Calendar<T>(child: calendarView) where T is the 推断的类型。
+
+
+
+## Tips
+
+
+SizedBox(width: 18, child: SizedBox(child: Text('$_favoriteCount'))),
+当 Text 在 40 和 41 之间变化时，将文本放在 SizedBox 中并设置其宽度可防止出现明显的「跳跃」，因为这些值具有不同的宽度。
+
+## Examples
+
+
+根据 size / 列表来动态创建元素。
+
+```
+ inputs = 3
+ children: List<Widget>.generate(inputs, (int index) {
+                return InputChip(
+                  label: Text('Person ${index + 1}'),
+                  selected: selectedIndex == index,
+                  onSelected: (bool selected) {
+                    setState(() {
+                      if (selectedIndex == index) {
+                        selectedIndex = null;
+                      } else {
+                        selectedIndex = index;
+                      }
+                    });
+                  },
+                  onDeleted: () {
+                    setState(() {
+                      inputs = inputs - 1;
+                    });
+                  },
+                );
+              }).toList(),
+```
