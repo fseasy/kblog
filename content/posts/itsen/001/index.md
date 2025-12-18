@@ -2,7 +2,7 @@
 title: "Sharp, 苹果团队开源，1张 图片 1s 就可以重建 3D 场景？ELI5"
 date: 2025-12-16T22:07:59+08:00
 slug: "apple-sharp-synthesis"
-draft: true
+draft: false
 image: perf.png
 math: false
 license: CC BY-SA 4.0
