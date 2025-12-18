@@ -157,10 +157,10 @@ deliver
 
 > <span class="hdot"></span> deliver 例句
 > 
-> The update delivers a better user experience.
-> The package was delivered this morning.
-> They deliver food within 30 minutes.
-> The courier will deliver the documents tomorrow. (courier 快递员、快递公司、导游)
+> - The update delivers a better user experience.
+> - The package was delivered this morning.
+> - They deliver food within 30 minutes.
+> - The courier will deliver the documents tomorrow. (courier 快递员、快递公司、导游)
 
 再简单说下里面涉及的领域知识：
 
@@ -284,7 +284,7 @@ word salad
 
 > <span class="hdot"></span> word salad 例句
 >
-> he abstract is so dense, it’s practically a word salad.  
+> The abstract is so dense, it’s practically a word salad.  
   这篇摘要太难懂，几乎成了文字沙拉。
 > His explanation was just a word salad, I couldn’t follow.  
   他的解释乱七八糟，我根本听不懂。
@@ -391,3 +391,7 @@ sharp render -i output/test-human -o output/test-human-renderings
 好啦，本期内容到此结束。喜欢的话就点个收藏，帮助频道慢慢成长吧。
 
 咱们下期再见！
+
+## Appendix: Practice Materials
+
+{{< include-relative "materials.md" >}}
