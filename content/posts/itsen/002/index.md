@@ -272,3 +272,7 @@ take a look at …
 好了，QuickStart 部分就看完了，我们这期的内容也结束啦。短短的一篇文档，蕴含着这么多的地道表达，一定要多多练习，内化为自己的东西哈，与君共勉了。
 
 喜欢我们的内容，就点赞收藏吧，咱们下期再见。
+
+## Appendix: Practice Materials
+
+{{< include-relative "materials.md" >}}
