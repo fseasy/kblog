@@ -40,7 +40,7 @@ With RenderCV, you can:
 
 typography: 排版
 
-wrestling: 有“摔跤”的含义，here means struggling with something difficult, awkward, or frustrating, rather than the sport - “较劲/折磨”。
+wrestling: 有“摔跤”的含义，here means struggling with something difficult, awkward, or frustrating, rather than the sport - “较劲/折磨”。注意发音 /ˈre-sliŋ/, `t` is silent.
 
 <section class="callout">
   <span class="hdot"></span> wrestling 例句
@@ -67,12 +67,17 @@ MicroQuickJS (aka. MQuickJS) is a Javascript engine targeted at embedded systems
   <section class="src-tag">“ Source Text</section>
 
 (comment 1) This engine restricts JS in all of the ways I wished I could restrict the language back when I was working on JSC.
-You can’t restrict JS that way on the web because of compatibility. But I totally buy that restricting it this way for embedded systems will result in something that sparks joy
+You can’t restrict JS that way on the web because of compatibility. But I totally buy that restricting it this way for embedded systems will result in something that sparks joy.
 
-(comment 2) Well, as Jeff Atwood famously said, "any application that can be written in JavaScript, will eventually be written in JavaScript". I guess that applies to embedded systems too
+(comment 2) Well, as Jeff Atwood famously said, "any application that can be written in JavaScript, will eventually be written in JavaScript". I guess that applies to embedded systems too.
 </section>
 
-注意这个 **buy**, 非常 native 的用法，If you buy an idea or explanation, you believe it, accept it, or find it convincing, 类似中文的 “买账”.
+<section class="kp">
+  <span class="dot"></span>
+buy
+</section>
+
+注意这个 **buy**, 非常 native 的用法。 If you buy an idea or explanation, you believe it, accept it, or find it convincing, 类似中文的 “买账”.
 
 <section class="callout">
   <span class="hdot"></span> buy (≈ believe) 常见用法
