@@ -15,6 +15,7 @@ categories:
   - "IT's English Channel"
 ---
 
+
 Hi, 各位读者朋友，欢迎回到 FS IT's English Channel. 这是我们的第 4 期内容。
 
 今天我们摘录部分 Mockito ("The most popular mocking framework for Java") 核心维护者 TimvdLippe 宣布卸任的原文，
@@ -55,7 +56,6 @@ In March 2026, I will be Mockito maintainer for 10 years (nearly a third of my w
 In this issue I list several considerations why I made the decision. Communication and discussion of plans for future maintainership will be somewhere else, most likely in a separate GitHub issue. Stay tuned for that.
 </section>
 
-```
 
 关注 2 个短语。
 
@@ -68,7 +68,7 @@ If someone passes on something to another person, they give it to them so that t
 “交接”。另一个常用的表交接的词是 hand over；要做对比的话，可以认为 pass on A to B 强调传承这种略虚的东西; hand over 偏重具体的事情或者流程本身。看下面的例句：
 
 <section class="callout">
-  <span class="hdot"></span> Step down 例句
+  <span class="hdot"></span> Pass on A to B 例句
 
 - After a decade, he chose to pass on the torch to the next maintainers.
 - She felt it was time to pass on her knowledge to the next generation.
@@ -87,7 +87,7 @@ If you say stay tuned, you are telling people to continue watching, listening, o
 “敬请关注”，应用非常广泛的词语。看下面的例句是否很熟悉：
 
 <section class="callout">
-  <span class="hdot"></span> Step down 例句
+  <span class="hdot"></span> Stay tuned 例句
 
 - More details will be announced soon — stay tuned.
 - We’re working on the next release. Stay tuned for updates.
@@ -130,7 +130,7 @@ Unfortunately such a collaborative way of working was not the case when discussi
 
 
 <section class="callout">
-  <span class="hdot"></span> Energy drain / Energy-draining
+  <span class="hdot"></span> Energy drain / Energy-draining 例句
 
 - Constant meetings have become a real energy drain.
   
@@ -161,7 +161,7 @@ Unfortunately such a collaborative way of working was not the case when discussi
 提出、提议. 常见于技术提案、标准讨论等正式场景。 If someone puts forward an idea, suggestion, or plan, they formally suggest it for consideration or discussion.
 
 <section class="callout">
-  <span class="hdot"></span> put forward
+  <span class="hdot"></span> put forward 例句
 
 - She put forward a proposal to change the review process
 - Several options were put forward during the discussion.
@@ -176,7 +176,7 @@ Unfortunately such a collaborative way of working was not the case when discussi
 You use to say the least to emphasize that a statement is an understatement, and that the real situation is stronger or more extreme than you have said.
 
 <section class="callout">
-  <span class="hdot"></span> to say the least
+  <span class="hdot"></span> to say the least 例句
 
 - The last few months have been difficult, to say the least.
 
@@ -203,6 +203,7 @@ You use to say the least to emphasize that a statement is an understatement, and
 
 My personal take is that folks involved with the change severely underestimated the societal impact that it had. The fact that proper build support is non-existent to this day shows that agents are not a priority. That's okay if it isn't a priority, but when it was communicated with Mockito I perceived it as "Mockito is holding the JVM ecosystem back by using dynamic attachment, please switch immediately and figure it out on your own".
 
+  
 Here, the fact that I (and others) are volunteers doing their best for the project, is important to understand the societal impact. When you put individuals under pressure, who do this work in their own time out of goodwill, things crumble. It's commonly joked about with XKCD's on the fact that the whole open source world relies on a couple of individuals. That couldn't be more true in this situation, where the collaborative system collapses when too much pressure is put on individual folks.
 
 This saga planted the seed to reconsider my position as maintainer.
@@ -246,7 +247,7 @@ This saga planted the seed to reconsider my position as maintainer.
 比较漂亮。学习 2 个点：
 
 <section class="kp">
-  <span class="dot"></span> saga /ˈsɑːɡə/
+  <span class="dot"></span> saga  /ˈsɑːɡə/
 </section>
 
 原意是“长篇史诗”，这里指“持续很久、反复拉扯、让人 energy-draining 的一整套事情”。 A saga is a long and complicated series of events or experiences.
@@ -282,6 +283,7 @@ This saga planted the seed to reconsider my position as maintainer.
 - societal: /səˈsaɪətl/ 社会的。与 social 做对比，societal 强调社会“制度”的，social 更多指“人际、社交”层面的。
 - perceived: 察觉到的，强调主管感受。扩展词: perception(感知), perceptron(感知器).
 - out of goodwill: 出于善意
+- XKCD: 指 https://xkcd.com，一个网络漫画网站。这里的 joke 应该就是 https://xkcd.com/2347/.
 
 
 ## Summing it up
@@ -306,7 +308,7 @@ While these points had impact on me as maintainer, my hypothesis is that it does
 <section class="callout">
   <span class="hdot"></span> in the best interest of ... 例句
 
-- The doctor made the decision in the best interest of the patient’s health.
+- The doctor made the decision in the best interest of the patient's health.
 - We postponed the release in the best interest of product quality and user safety.
 - The court ruled that placing the child with her grandmother was in the best interest of the child.
 </section>
@@ -322,4 +324,3 @@ ChatGPT 翻译：因为归根结底，这就是我当初选择成为维护者的
 好啦，这就是本期全部内容了。
 
 喜欢我们的内容，记得点赞评论和关注哦，下期再见!
-
