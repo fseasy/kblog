@@ -1,5 +1,5 @@
 ---
-title: "#005 IT 热点速递 | Chatterbox TTS Turbo, Sopro TTS, 基于 Rust+async 的嵌入式框架 Embassy"
+title: "#005 IT 热点速递 | Chatterbox TTS Turbo, Sopro TTS, 嵌入式框架 Embassy"
 date: 2026-01-09T10:37:59+08:00
 slug: "itsen-005-chatterbox-turbo"
 draft: false
@@ -108,7 +108,7 @@ Some of the main features are:
 
 
 这个有点奇怪，听 demo 音频显然音质是很差的，但是 Hacker News 上倒是挺多赞的。
-有一条评论是质疑的：
+所以有一条评论是质疑的：
 
 <section class="st">
   <section class="src-tag">“ Source Text</section>
@@ -159,7 +159,7 @@ If you mistake A as B, you wrongly believe that A is B, or think that A and B ar
 
 项目地址：https://github.com/embassy-rs/embassy
 
-一个用来写嵌入式程序的框架。
+一个用来写嵌入式程序的框架。对此方向不是特别了解，ChatGPT 介绍背景如下：
 
 Embassy programs are compiled into firmware and flashed directly onto microcontrollers. There is no operating system — the code runs on bare metal, and Embassy provides its own async executor to schedule tasks after power-on.
 
@@ -205,4 +205,5 @@ unprecedentedly: Unprecedentedly is used to say that something happens in a way 
 ## End
 
 好啦，这就是本期的内容啦。我们在继续缩减投入量，所以现在就不放 TTS 音频了。
+  
 但是更新还是会继续的，所以 stay tuned for updates!
