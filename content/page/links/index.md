@@ -1,5 +1,6 @@
 ---
 title: Links
+date: 2019-05-28T00:00:00+00:00
 links:
   - title: GitHub
     description: GitHub is the world's largest software development platform.
