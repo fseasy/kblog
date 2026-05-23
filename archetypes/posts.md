@@ -2,7 +2,7 @@
 title: "{{ replace .Name "_" " " | title }}"
 date: {{ .Date }}
 slug: ""
-draft: true
+draft: false
 image: 
 math: false
 license: CC BY-SA 4.0
