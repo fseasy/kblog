@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "hugo server -p 9987",
-    "new-english": "hugo new -k posts content/posts/en-learn/$(date '+%y-%m').md"
+    "new-english": "hugo new -k en-learn content/posts/en-learn/$(date '+%y-%m').md"
   },
   "keywords": [],
   "author": "",
