@@ -2,6 +2,7 @@
 title: "Jetpack Compose 高性能全屏大图预览：多层手势联动、双轨视口裁剪与 Modifier.Node 极致演进 [BY Gemini 3.8 Flash]"
 date: 2026-09-27T11:01:53+08:00
 slug: "jetpack-compose-image-fullscreen-viewer"
+description: "在 Android 应用开发中，实现一个全屏大图预览功能，涵盖列表缩略图共享元素飞入飞出、双指捏合平移缩放、下拉阻尼退场、系统预测性返回手势适配。基于传统的 Chat 方式解决了开发过程中遇到的问题，最后由 Gemini 整理得到此文。"
 draft: false
 image: 
 math: true
