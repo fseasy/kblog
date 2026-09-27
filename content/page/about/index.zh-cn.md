@@ -1,11 +1,16 @@
 ---
-title: 关于
+title: "关于"
 date: 2019-05-28T00:00:00+00:00
 menu:
     main: 
-        weight: -90
+        weight: -10
         params:
             icon: user
+slug: "about-cn"
 ---
 
-This is a test page for i18n support.
+一个由 Fseasy 记录「知识」的站点。
+
+在 AI 时代，知识的门槛已经非常低，这里的内容也可能本就是 AI 产生的。
+
+但，如果把 AI 看作一个全能的人，那么这里的内容，或许可以看作由我做的一个过滤和筛选，带有个人的整理，这或许是相比直接把问题抛给 AI 所获取的答案，唯一的特色吧—不是优势，只是一个特色。

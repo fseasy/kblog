@@ -4,7 +4,7 @@ date: 2026-09-27T11:01:53+08:00
 slug: "jetpack-compose-image-fullscreen-viewer"
 draft: false
 image: 
-math: false
+math: true
 license: CC BY-SA 4.0
 comments: true
 hidden: false

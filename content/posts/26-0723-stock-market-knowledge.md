@@ -4,7 +4,7 @@ date: 2026-07-23T14:50:28+08:00
 slug: "stock-market-glossary"
 draft: false
 image: 
-math: false
+math: true
 license: CC BY-SA 4.0
 comments: true
 hidden: false

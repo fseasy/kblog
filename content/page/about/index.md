@@ -1,34 +1,23 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
+description: Knowledge of Fseasy Blog.
 date: '2019-02-28'
 aliases:
   - about-us
-  - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2020-10-09'
+lastmod: '2026-09-09'
 menu:
     main: 
-        weight: -90
+        weight: -10
         params:
             icon: user
+slug: "about"
+
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+A site where Fseasy records "knowledge."
 
-Hugo makes use of a variety of open source projects including:
+In the age of AI, the barrier to knowledge has become exceedingly low, and the content here may well have been produced by AI in the first place.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+But if we think of AI as an all-capable person, then the content here can perhaps be seen as a filter and selection made by me, with some personal curation. This may be the only distinctive quality compared to simply throwing a question at AI—not an advantage, just a distinction.
