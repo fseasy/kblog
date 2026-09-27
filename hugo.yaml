@@ -13,7 +13,6 @@ baseurl: https://k.fseasy.blog
 languageCode: 'zh-CN'
 pagination:
   pagerSize: 10
-title: 知
 copyright: fseasy
 
 languages:
