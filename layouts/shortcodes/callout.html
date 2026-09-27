@@ -1,0 +1,13 @@
+{{- $type := .Get "type" | default "none" }}
+{{- $icon := .Get "icon" | default "" }}
+{{- $border := .Get "border" | default "false" }}
+<div class="k-callout k-callout--{{- $type }} {{- if eq $border "false" }}no-border{{- end }}">
+  {{- if $icon }}
+  <div class="k-callout-icon">
+    {{- $icon }}
+  </div>
+  {{- end}}
+  <div class="k-callout-content">
+    {{- .Inner | markdownify }}
+  </div>
+</div>

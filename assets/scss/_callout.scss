@@ -1,0 +1,94 @@
+/* =========================================
+   Notion-style Callout
+   ========================================= */
+
+.k-callout {
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75em;
+
+  /* Spacing */
+  padding: 1em 1.25em;
+  margin: 1em 0;
+
+  /* Appearance */
+  background: var(--callout-bg, var(--note-bg));
+  /* Default to note-bg */
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+
+  /* Text */
+  font-size: 0.95em;
+  line-height: 1.5;
+
+  /* Icon */
+  &-icon {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 0.1em;
+    flex-shrink: 0;
+  }
+
+  /* Content */
+  &-content {
+    >p:first-child {
+      margin-top: 0;
+    }
+
+    >p:last-child {
+      margin-bottom: 0;
+    }
+
+    >ul {
+      padding-inline-start: 1em;
+    }
+  }
+
+  /* ---------------------------------------
+     Type (Color) Variants
+     --------------------------------------- */
+  &--muted {
+    --callout-bg: var(--muted-bg);
+    border-color: var(--muted-border);
+  }
+
+  &.callout--note {
+    background: var(--note-bg);
+    border-color: var(--note-border);
+  }
+
+  &.callout--tip {
+    background: var(--tip-bg);
+    border-color: var(--tip-border);
+  }
+
+  &.callout--important {
+    background: var(--important-bg);
+    border-color: var(--important-border);
+  }
+
+  &.callout--warning {
+    background: var(--warning-bg);
+    border-color: var(--warning-border);
+  }
+
+  &.callout--caution {
+    background: var(--caution-bg);
+    border-color: var(--caution-border);
+  }
+
+  &.callout--none {
+    background: var(--none-bg);
+    border-color: var(--none-border);
+  }
+
+  &.no-border {
+    border: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #e5e7eb;
+  }
+}
